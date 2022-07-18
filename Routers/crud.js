@@ -14,7 +14,7 @@ router.post("/add", async (req, res) => {
 });
 
 //update task
-router.post("/update", async (req, res) => {
+router.put("/update", async (req, res) => {
   const data = { ...req.body };
   await Task.update(
     {
